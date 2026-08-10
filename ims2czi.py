@@ -172,13 +172,13 @@ def ims_to_czi(ims_path):
         for t in range(T):
             for c in range(C):
                 for z in range(Z):
+                    plane = a[t, c, z, :, :]
                     
                     # Flip horizontally 
                     
                     plane = np.flip(plane, axis=0)
                     
-
-                    plane = a[t, c, z, :, :]
+                   
                     cz.write(data=plane, plane={"C": c, "Z": z, "T": t})
 
         scale_x, scale_y, scale_z = try_get_pixel_size_from_geometry(ims_path, a.shape)
