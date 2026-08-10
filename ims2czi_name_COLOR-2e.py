@@ -172,6 +172,12 @@ def ims_to_czi(ims_path):
         for t in range(T):
             for c in range(C):
                 for z in range(Z):
+                    
+                    # Flip horizontally 
+                    
+                    plane = np.flip(plane, axis=0)
+                    
+
                     plane = a[t, c, z, :, :]
                     cz.write(data=plane, plane={"C": c, "Z": z, "T": t})
 
