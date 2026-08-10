@@ -58,7 +58,7 @@ Then select the folder containing `.ims` files. Converted `.czi` files will be s
 For users who don't have Python installed, a standalone executable is available under the [Releases](https://github.com/qqhair2000/ims2czi/releases) page.
 
 ### How to use:
-1. Download `ims2czi_name_COLOR-2e.exe` from the **Assets** section of the latest release.
+1. Download `ims2czi.exe` from the **Assets** section of the latest release.
 2. Double-click to launch a file selection dialog.
 3. Choose the folder containing `.ims` files.
 4. The tool will batch convert all `.ims` files in that folder to `.czi`.
